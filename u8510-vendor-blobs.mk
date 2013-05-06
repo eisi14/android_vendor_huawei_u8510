@@ -24,7 +24,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/u8510/proprietary/lib/libril.so:obj/lib/libril.so \
     vendor/huawei/u8510/proprietary/lib/libmmipl.so:obj/lib/libmmipl.so \
     vendor/huawei/u8510/proprietary/lib/libmmjpeg.so:obj/lib/libmmjpeg.so \
-    vendor/huawei/u8510/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
     vendor/huawei/u8510/proprietary/lib/libgstk_exp.so:obj/lib/libgstk_exp.so \
     vendor/huawei/u8510/proprietary/lib/libpbmlib.so:obj/lib/libpbmlib.so \
     vendor/huawei/u8510/proprietary/lib/libwms.so:obj/lib/libwms.so \
@@ -68,12 +67,9 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/u8510/proprietary/lib/libsnd.so:system/lib/libsnd.so \
     vendor/huawei/u8510/proprietary/lib/libaudioeq.so:system/lib/libaudioeq.so \
     vendor/huawei/u8510/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
-    vendor/huawei/u8510/proprietary/lib/libcamera.so:system/lib/libcamera.so \
     vendor/huawei/u8510/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
     vendor/huawei/u8510/proprietary/lib/libmmipl.so:system/lib/libmmipl.so \
     vendor/huawei/u8510/proprietary/etc/firmware/BCM4329.hcd:system/etc/firmware/BCM4329.hcd \
-    vendor/huawei/u8510/proprietary/etc/wifi/firmware.bin:system/etc/wifi/firmware.bin \
-    vendor/huawei/u8510/proprietary/etc/wifi/firmware_apsta.bin:system/etc/wifi/firmware_apsta.bin \
     vendor/huawei/u8510/proprietary/bin/ami304d:system/bin/ami304d \
     vendor/huawei/u8510/proprietary/bin/rild:system/bin/rild \
     vendor/huawei/u8510/proprietary/lib/modules/dhd.ko:system/lib/modules/dhd.ko \
