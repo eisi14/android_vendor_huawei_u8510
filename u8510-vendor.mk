@@ -13,10 +13,7 @@
 # limitations under the License.
 
 
-
 # Pick up overlay for features that depend on non-open-source files
-DEVICE_PACKAGE_OVERLAYS := vendor/huawei/msm7x27-common/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/huawei/u8510/overlay
 
-$(call inherit-product, vendor/huawei/msm7x27-common/msm7x27-common-vendor-blobs.mk)
 $(call inherit-product, vendor/huawei/u8510/u8510-vendor-blobs.mk)

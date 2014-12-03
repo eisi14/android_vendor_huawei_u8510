@@ -21,12 +21,9 @@
 #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ######################    DEPENDENCY SECTION  #######################
 PRODUCT_COPY_FILES += \
-    vendor/huawei/u8510/proprietary/lib/libril.so:obj/lib/libril.so \
     vendor/huawei/u8510/proprietary/lib/libmmipl.so:obj/lib/libmmipl.so \
     vendor/huawei/u8510/proprietary/lib/libmmjpeg.so:obj/lib/libmmjpeg.so \
-    vendor/huawei/u8510/proprietary/lib/libgstk_exp.so:obj/lib/libgstk_exp.so \
-    vendor/huawei/u8510/proprietary/lib/libpbmlib.so:obj/lib/libpbmlib.so \
-    vendor/huawei/u8510/proprietary/lib/libwms.so:obj/lib/libwms.so \
+#     vendor/huawei/u8510/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
     vendor/huawei/u8510/proprietary/lib/liboemcamera.so:obj/lib/liboemcamera.so
 
 
@@ -34,11 +31,11 @@ PRODUCT_COPY_FILES += \
 ###################### DON'T EDIT ###################################
 PRODUCT_COPY_FILES += \
     vendor/huawei/u8510/proprietary/bin/qmuxd:system/bin/qmuxd \
-    vendor/huawei/u8510/proprietary/bin/compassd:system/bin/compassd \
     vendor/huawei/u8510/proprietary/etc/flex/flex.xml:system/etc/flex/flex.xml \
     vendor/huawei/u8510/proprietary/lib/libgstk_exp.so:system/lib/libgstk_exp.so \
-    vendor/huawei/u8510/proprietary/lib/libqmi.so:system/lib/libqmi.so \
     vendor/huawei/u8510/proprietary/lib/libpbmlib.so:system/lib/libpbmlib.so \
+    vendor/huawei/u8510/proprietary/lib/libwms.so:system/lib/libwms.so \
+    vendor/huawei/u8510/proprietary/lib/libqmi.so:system/lib/libqmi.so \
     vendor/huawei/u8510/proprietary/lib/libmmgsdilib.so:system/lib/libmmgsdilib.so \
     vendor/huawei/u8510/proprietary/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
     vendor/huawei/u8510/proprietary/lib/libdsm.so:system/lib/libdsm.so \
@@ -46,12 +43,11 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/u8510/proprietary/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
     vendor/huawei/u8510/proprietary/lib/libnv.so:system/lib/libnv.so \
     vendor/huawei/u8510/proprietary/lib/libauth.so:system/lib/libauth.so \
-    vendor/huawei/u8510/proprietary/lib/libril.so:system/lib/libril.so \
-    vendor/huawei/u8510/proprietary/lib/libwms.so:system/lib/libwms.so \
     vendor/huawei/u8510/proprietary/lib/libdiag.so:system/lib/libdiag.so \
     vendor/huawei/u8510/proprietary/lib/liboem_rapi.so:system/lib/liboem_rapi.so \
     vendor/huawei/u8510/proprietary/lib/libgsdi_exp.so:system/lib/libgsdi_exp.so \
     vendor/huawei/u8510/proprietary/lib/libril-qc-1.so:system/lib/libril-qc-1.so \
+    vendor/huawei/u8510/proprietary/lib/libhwrpc.so:system/lib/libhwrpc.so \
     vendor/huawei/u8510/proprietary/lib/liblgeat.so:system/lib/liblgeat.so \
     vendor/huawei/u8510/proprietary/lib/libcm.so:system/lib/libcm.so \
     vendor/huawei/u8510/proprietary/lib/libqueue.so:system/lib/libqueue.so \
@@ -61,19 +57,12 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/u8510/proprietary/lib/libbcmwl.so:system/lib/libbcmwl.so \
     vendor/huawei/u8510/proprietary/lib/libwmsts.so:system/lib/libwmsts.so \
     vendor/huawei/u8510/proprietary/lib/libdsutils.so:system/lib/libdsutils.so \
-    vendor/huawei/u8510/proprietary/lib/libhwrpc.so:system/lib/libhwrpc.so \
     vendor/huawei/u8510/proprietary/lib/libidl.so:system/lib/libidl.so \
     vendor/huawei/u8510/proprietary/lib/liblgdrm.so:system/lib/liblgdrm.so \
     vendor/huawei/u8510/proprietary/lib/libsnd.so:system/lib/libsnd.so \
     vendor/huawei/u8510/proprietary/lib/libaudioeq.so:system/lib/libaudioeq.so \
     vendor/huawei/u8510/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
+    vendor/huawei/u8510/proprietary/lib/libcamera.so:system/lib/libcamera.so \
     vendor/huawei/u8510/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
     vendor/huawei/u8510/proprietary/lib/libmmipl.so:system/lib/libmmipl.so \
-    vendor/huawei/u8510/proprietary/etc/firmware/BCM4329.hcd:system/etc/firmware/BCM4329.hcd \
-    vendor/huawei/u8510/proprietary/bin/ami304d:system/bin/ami304d \
-    vendor/huawei/u8510/proprietary/bin/rild:system/bin/rild \
-    vendor/huawei/u8510/proprietary/lib/modules/dhd.ko:system/lib/modules/dhd.ko \
-    vendor/huawei/u8510/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
-    vendor/huawei/u8510/proprietary/lib/libcommondefs.so:system/lib/libcommondefs.so \
-    vendor/huawei/u8510/proprietary/lib/libloc_api-rpc-qc.so:system/lib/libloc_api-rpc-qc.so \
-    vendor/huawei/u8510/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so
+    vendor/huawei/u8510/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so
